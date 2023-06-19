@@ -11,12 +11,21 @@ jQuery(document).ready(function( $ ) {
       $(".toggle-mnu").removeClass("on");
       $(".top-mnu").fadeOut();
     }
+    $('.has-tooltip sup span').removeClass('show');
   });
 
 
-  $(".top-mnu").click(function (e) {
+  $(".has-tooltip, .top-mnu").click(function (e) {
     e.stopPropagation();
   });
+
+$('.has-tooltip').each(function () {
+  const tooltip = $(this).find('sup span');  
+  $(this).click(function () {
+    $('.has-tooltip sup span').removeClass('show');
+    tooltip.addClass('show');
+  })
+});
 
 
 
@@ -51,7 +60,7 @@ else {
 
 
 
-let timerId = setInterval(() => $('.slider-3').css('transform', 'translateX(-1px)'), 1000);
+
 
 
 /*$('.top__slider').slick({

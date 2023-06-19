@@ -468,7 +468,49 @@ button {
         cursor: pointer;
         color: #3B71FE;
         font-weight: 600;
+        span {
+        }
       } 
+    }
+  }
+  label {
+
+  }
+}
+
+.has-tooltip {
+  position: relative;
+  div {
+    sup {
+      span {          
+        transform: translate(0%, 100%);
+        left: 0;
+        bottom: -9px;
+        width: 300px;
+        position: absolute;
+        padding: 10px 14px;
+        background: #ECF1FF;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 15px;
+        color: #222222;
+        font-weight: 400;
+        opacity: 0;
+        visibility: hidden;            
+        transition: 0.5s;
+        &.show {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      @media (any-hover: hover) {
+        &:hover {
+          span {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
     }
   }
 }

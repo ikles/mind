@@ -82,10 +82,7 @@ sub {
 
 sup {
   font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -0.5em; }
+  line-height: 0; }
 
 sub {
   bottom: -0.25em; }
@@ -770,6 +767,34 @@ button {
     cursor: pointer;
     color: #3B71FE;
     font-weight: 600; }
+
+.has-tooltip {
+  position: relative; }
+  .has-tooltip div sup span {
+    -webkit-transform: translate(0%, 100%);
+        -ms-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+    left: 0;
+    bottom: -9px;
+    width: 300px;
+    position: absolute;
+    padding: 10px 14px;
+    background: #ECF1FF;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #222222;
+    font-weight: 400;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s; }
+    .has-tooltip div sup span.show {
+      opacity: 1;
+      visibility: visible; }
+  @media (any-hover: hover) {
+    .has-tooltip div sup:hover span {
+      opacity: 1;
+      visibility: visible; } }
 
 .completed-slde-dots {
   position: absolute;
