@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4 Добавить отзыв</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="inner-body">
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+      <div class="contain">
+        <div class="row">
+          <div class="col-l">
+            <h1>Оставить отзыв</h1>
+            <form class="add-quest__form">
+              <div class="add-quest__row">
+                <label>
+                  <div>Название сервиса<sup>*</sup></div>
+                  <select>
+                    <option value=""></option>
+                    <option value="1">2</option>
+                  </select>
+                </label>
+                <label>
+                  <div>Email<sup>*</sup></div>
+                  <input type="text" placeholder="">
+                </label>
+              </div>
+              <div class="add-quest__row">
+                <label>
+                  <div>Имя<sup>*</sup> </div>
+                  <input type="text" placeholder="">
+                </label>
+                <label>
+                  <div>Фамилия <sup>*</sup></div>
+                  <input type="text" placeholder="">
+                </label>
+              </div>
+
+              <div class="rating__row">
+                <p>Общая оценка <sup>*</sup></p>
+                <div class="rating__item">
+                  <div class="rating__stars" data-result-value="0">
+                    <div class="rating__star" data-star-value="5"></div>
+                    <div class="rating__star" data-star-value="4"></div>
+                    <div class="rating__star" data-star-value="3"></div>
+                    <div class="rating__star" data-star-value="2"></div>
+                    <div class="rating__star" data-star-value="1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="add-quest__row">
+                <label class="add-quest__col-100">
+                  <div>Заголовок отзыва<sup>*</sup></div>      
+                  <input type="text" placeholder="">
+                </label>
+              </div>
+              <div class="add-quest__row">
+                <label class="add-quest__col-100">
+                  <div>Общее впечатление<sup>*</sup></div>      
+                  <textarea></textarea>
+                </label>
+              </div>
+              <div class="add-quest__row">
+                <label class="add-quest__col-100">
+                  <div>Плюсы</div>      
+                  <textarea></textarea>
+                </label>
+              </div>
+              <div class="add-quest__row">
+                <label class="add-quest__col-100">
+                  <div>Минусы</div>      
+                  <textarea></textarea>
+                </label>
+              </div>
+              <div class="add-quest__robot">
+                <img src="img/robot.jpg">
+              </div>
+              <button>Добавить отзыв</button>
+
+            </form>
+
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5 Страница сервиса</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="programm">
+        <img src="img/pcard_1.jpg">
+        <h1>MindManager</h1>
+        <p>Программное обеспечение для составления интеллект-карт</p>
+        <div class="programm__info">
+          <div class="rating">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="star-o"></span>
+            <div class="">4</div>
+          </div>
+          <div class="pcard__info-row">        
+            <a href="">Веб-сайт</a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="contain">        
+          <ul class="programm__anchors">
+            <li><a class="" href="#desc">Описание</a></li>
+            <li><a href="#capability">Возможности</a></li>
+            <li><a href="#prices">Цены</a></li>
+            <li><a href="#videos">Видеоуроки (1)</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+          </ul>
+
+          <div class="anchor__item" id="desc">
+            <div class="h3">Описание</div>
+            <p>MindManager — картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты. MindManager преобразовывает стратегические замыслы, идеи и деловую информацию в наглядные карты.</p>
+            <ul>
+              <li>— Фиксация, систематизация и структурирование информации</li>
+              <li>— Методы поиска, сбора, объединения и анализа данных, окружающих работу</li>
+              <li>— Условия для обмена большими объемами информации</li>
+            </ul>
+          </div>
+          <div class="anchor__item" id="capability">
+            <div class="h3">Возможности</div>
+            <ul>
+              <li class="yes">Шаблоны</li>
+              <li class="yes">Комментарии</li>
+              <li class="no">Режим рисования</li>
+              <li class="no">Гостевой доступ</li>
+              <li class="yes">Вложение мультимедиа</li>
+              <li class="yes">История изменений</li>
+              <li class="yes">Совместная работа</li>
+              <li class="no">Экспорт в PNG/PPT/SVG</li>
+              <li class="yes">Встраивание на сайт</li>
+            </ul>
+          </div>
+          <div class="anchor__item" id="prices">
+            <div class="h3">Цены</div>
+          </div>
+          <div class="anchor__item" id="videos"></div>
+          <div class="anchor__item" id="reviews"></div>
+
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>
