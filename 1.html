@@ -29,7 +29,7 @@
               <div>для создания интеллект карт</div>
               <p>Подберите удобные сервисы для создания интеллект карт</p>
               <form>
-                <input type="text" placeholder="Ваш телефон" />
+                <input type="text" placeholder="" />
                 <input type="submit">
               </form>
             </div>
@@ -39,13 +39,13 @@
       </div>
       <div class="mcontent">
         <div class="contain">
+          <ul class="sort">
+            <li><a href="" class="active">Все сервисы</a></li>
+            <li><a href="">Бесплатные</a></li>
+            <li><a href="">Лидеры рынка</a></li>
+          </ul>
           <div class="row">
             <div class="col-l">              
-              <ul class="sort">
-                <li><a href="" class="active">Все сервисы</a></li>
-                <li><a href="">Бесплатные</a></li>
-                <li><a href="">Лидеры рынка</a></li>
-              </ul>
               <div class="pcards">
                 @@include('var/_pcard.html',{
                   "img":"img/pcard_1.jpg",
@@ -188,60 +188,60 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-header">Язык интерфейса</div>
-                    <div class="accordion-content">
-                     <label>
-                      <input type="checkbox">
-                      <span></span>
-                      <div>iOS</div>
-                    </label>
-                    <label>
-                      <input type="checkbox">
-                      <span></span>
-                      <div>Android</div>
-                    </label>     
-                  </div>
+                  <div class="accordion-header">Язык интерфейса</div>
+                  <div class="accordion-content">
+                   <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>iOS</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Android</div>
+                  </label>     
                 </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">Установка</div>
-                    <div class="accordion-content">
-                     <label>
-                      <input type="checkbox">
-                      <span></span>
-                      <div>iOS</div>
-                    </label>
-                    <label>
-                      <input type="checkbox">
-                      <span></span>
-                      <div>Android</div>
-                    </label>     
-                  </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">Страна разработки</div>
-                    <div class="accordion-content">
-                     <label>
-                      <input type="checkbox">
-                      <span></span>
-                      <div>iOS</div>
-                    </label>
-                    <label>
-                      <input type="checkbox">
-                      <span></span>
-                      <div>Android</div>
-                    </label>     
-                  </div>
-                </div>
- 
-
               </div>
-
-            </form>
+              <div class="accordion-item">
+                <div class="accordion-header">Установка</div>
+                <div class="accordion-content">
+                 <label>
+                  <input type="checkbox">
+                  <span></span>
+                  <div>iOS</div>
+                </label>
+                <label>
+                  <input type="checkbox">
+                  <span></span>
+                  <div>Android</div>
+                </label>     
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">Страна разработки</div>
+              <div class="accordion-content">
+               <label>
+                <input type="checkbox">
+                <span></span>
+                <div>iOS</div>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span></span>
+                <div>Android</div>
+              </label>     
+            </div>
           </div>
+
+
         </div>
-      </div>
+
+      </form>
     </div>
   </div>
+</div>
+</div>
+</div>
 </main>
 @@include('var/_footer.html')
 </div>

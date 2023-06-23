@@ -17,66 +17,206 @@
 </head>
 
 <body>
-
   <div class="wrapper">
     @@include('var/_header.html')
     <main class="main">
       <div class="programm">
-        <img src="img/pcard_1.jpg">
-        <h1>MindManager</h1>
-        <p>Программное обеспечение для составления интеллект-карт</p>
-        <div class="programm__info">
-          <div class="rating">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="star-o"></span>
-            <div class="">4</div>
-          </div>
-          <div class="pcard__info-row">        
-            <a href="">Веб-сайт</a>
+        <div class="contain">
+          <img src="img/pcard_1.jpg">
+          <h1>MindManager</h1>
+          <p>Программное обеспечение для составления интеллект-карт</p>
+          <div class="programm__info">
+            <div class="rating">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="star-o"></span>
+              <div class="">4</div>
+            </div>
+            <div class="pcard__info-row">        
+              <a href="">Веб-сайт</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="content">
-        <div class="contain">        
-          <ul class="programm__anchors">
-            <li><a class="" href="#desc">Описание</a></li>
-            <li><a href="#capability">Возможности</a></li>
-            <li><a href="#prices">Цены</a></li>
-            <li><a href="#videos">Видеоуроки (1)</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-          </ul>
+      <div class="programm__contain contain">
+        <ul class="programm__anchors">
+          <li><a class="" href="#desc">Описание</a></li>
+          <li><a href="#capability">Возможности</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#videos">Видеоуроки (1)</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+        <div class="h3">Описание</div>
+        <div class="content__row">
+          <div class="content__left">
 
-          <div class="anchor__item" id="desc">
-            <div class="h3">Описание</div>
-            <p>MindManager — картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты. MindManager преобразовывает стратегические замыслы, идеи и деловую информацию в наглядные карты.</p>
-            <ul>
-              <li>— Фиксация, систематизация и структурирование информации</li>
-              <li>— Методы поиска, сбора, объединения и анализа данных, окружающих работу</li>
-              <li>— Условия для обмена большими объемами информации</li>
-            </ul>
+            <div class="anchor__item" id="desc">
+              <p>MindManager — картографическое программное обеспечение компании, в основе которого лежат интеллектуальные (ментальные) карты. MindManager преобразовывает стратегические замыслы, идеи и деловую информацию в наглядные карты.</p>
+              <ul>
+                <li>— Фиксация, систематизация и структурирование информации</li>
+                <li>— Методы поиска, сбора, объединения и анализа данных, окружающих работу</li>
+                <li>— Условия для обмена большими объемами информации</li>
+              </ul>
+            </div>
+            <div class="anchor__item" id="capability">
+              <div class="h3">Возможности</div>
+              <ul>
+                <li class="yes">Шаблоны</li>
+                <li class="yes">Комментарии</li>
+                <li class="no">Режим рисования</li>
+                <li class="no">Гостевой доступ</li>
+                <li class="yes">Вложение мультимедиа</li>
+                <li class="yes">История изменений</li>
+                <li class="yes">Совместная работа</li>
+                <li class="no">Экспорт в PNG/PPT/SVG</li>
+                <li class="yes">Встраивание на сайт</li>
+              </ul>
+            </div>
+            <div class="anchor__item" id="prices">
+              <div class="h3">Цены</div>
+              <p>Старт от - 25 $</p>
+              <p>Тарифы доступны по <a href="">ссылке</a>.</p>
+              <div class="prices__info">
+                <p><span>Наличие пробного периода:</span> Да</p>
+                <p><span>Способ оплаты:</span> По подписке</p>
+                <p><span>API:</span> Есть</p>
+                <p><span>Бесплатный тариф:</span> Нет</p>
+                <p><span>Страна разработки:</span> Испания</p>
+                <p><span>Доступные языки:</span> English</p>
+                <p><span>Установка:</span> Облако</p>
+                <p><span>Платформы:</span> Веб-приложение</p>
+                
+              </div>
+            </div>
+            <div class="anchor__item" id="videos">
+              <div class="h3">Видеоуроки</div>
+              <a href="">
+                <img src="img/video.jpg" alt="">
+                <span>Заголовок видео</span>
+              </a>
+              <div class="videos__info">
+                <ul>
+                  <li><img src="img/clock_3.svg" alt="">Обновлено: 23.04.2023</li>
+                  <li><img src="img/eye_3.svg" alt="">Просмотры: 23</li>
+                  <li><img src="img/excl_3.svg" alt=""><a href="">Сообщить об ошибке</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!--content__left-->
+          <div class="content__right">
+            <div class="slider-for">
+              <a data-fancybox="gallery" href="img/slider-for-1.jpg" class="slider-for__slide"><img src="img/slider-for-1.jpg" alt=""></a>              
+              <a data-fancybox="gallery" href="img/slider-for-1.jpg" class="slider-for__slide"><img src="img/slider-for-1.jpg" alt=""></a>              
+              <a data-fancybox="gallery" href="img/slider-for-1.jpg" class="slider-for__slide"><img src="img/slider-for-1.jpg" alt=""></a>              
+              <a data-fancybox="gallery" href="img/slider-for-1.jpg" class="slider-for__slide"><img src="img/slider-for-1.jpg" alt=""></a>              
+              <a data-fancybox="gallery" href="img/slider-for-1.jpg" class="slider-for__slide"><img src="img/slider-for-1.jpg" alt=""></a>              
+            </div>
+            <div class="slider-nav">
+              <div class="slider-nav__thumb"><img src="img/slider-nav-1.jpg" alt=""></div>              
+              <div class="slider-nav__thumb"><img src="img/slider-nav-1.jpg" alt=""></div>              
+              <div class="slider-nav__thumb"><img src="img/slider-nav-1.jpg" alt=""></div>              
+              <div class="slider-nav__thumb"><img src="img/slider-nav-1.jpg" alt=""></div>              
+              <div class="slider-nav__thumb"><img src="img/slider-nav-1.jpg" alt=""></div>              
+            </div>
+          </div><!--content__r-->
+        </div>
+        <div id="reviews">
+          <div class="reviews__w">
+            <div class="h3">Отзывы <span>(2)</span></div>
+            <button>Добавить отзыв</button>
           </div>
-          <div class="anchor__item" id="capability">
-            <div class="h3">Возможности</div>
-            <ul>
-              <li class="yes">Шаблоны</li>
-              <li class="yes">Комментарии</li>
-              <li class="no">Режим рисования</li>
-              <li class="no">Гостевой доступ</li>
-              <li class="yes">Вложение мультимедиа</li>
-              <li class="yes">История изменений</li>
-              <li class="yes">Совместная работа</li>
-              <li class="no">Экспорт в PNG/PPT/SVG</li>
-              <li class="yes">Встраивание на сайт</li>
-            </ul>
+          <div class="reviews__item">
+            <div class="reviews__left">
+              <div class="reviews__name">
+                <div class="reviews__ava">А</div>
+                <div class="reviews__name-r">
+                  <p>Adel</p>
+                  <span>23.04.2023</span>
+                </div>
+              </div>
+              <div class="reviews__content">
+                <p><strong>Есть недоработки, но в целом - нормальный сервис</strong></p>
+                <p>
+                  Пользуюсь четыре месяца и за это время пока не нашла недостатков, а только одни достоинства. С помощью MindManager мне стало намного проще работать, помогает не только создавать, но собирать, анализировать и организовывать
+                  все необходимые данные.
+                </p>
+                <div class="disadvantages">
+                  <p class="color-green">Плюсы</p>
+                  <p>Очень большой выбор разных шаблонов</p>
+                  <p class="color-red">Минусы</p>
+                  <p>
+                    Из минусов отмечу, что не все города, по которым мне нужно отслеживать статистику, есть в списке. Я писала в Поддержку с просьбой добавить некоторые, но пока они этого не сделали. Еще выплаты по партнёрке частенько
+                    задерживают, бывало, что через неделю только приходили.
+                  </p>
+                </div>
+                <div class="reviews__actions">
+                  <a href="">
+                    <img src="img/like-1.svg"/>
+                    <span>2</span>
+                  </a>
+
+                  <a href="">
+                    <img src="img/dislike.svg"/>
+                    <span>0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__info">
+              <div class="rating">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="star-o"></span>                
+              </div>
+            </div>
           </div>
-          <div class="anchor__item" id="prices">
-            <div class="h3">Цены</div>
+          <div class="reviews__item">
+            <div class="reviews__left">
+              <div class="reviews__name">
+                <div class="reviews__ava">А</div>
+                <div class="reviews__name-r">
+                  <p>Alexandr Ushakevich</p>
+                  <span>23.04.2023</span>
+                </div>
+              </div>
+              <div class="reviews__content">
+                <p><strong>Очень удобный сервис</strong></p>
+                <p>
+                  Используем в команде, чтобы строить ментальные карты, собирать и структурировать результаты аналитики и CustDev, проектировать процессы, разрабатывать продукты и предложения. Работает быстро, не тормозит даже на больших схемах, всегда под рукой - можно быстро обсудить схему с коллегами, можно даже использовать в качестве презентации клиентам.
+                </p>
+                <div class="disadvantages">
+                  <p class="color-green">Плюсы</p>
+                  <p>совместная работа, редактирование, обсуждение, размещение досок</p>
+                  <p class="color-red">Минусы</p>
+                  <p>чат и некоторые другие функции пока не особо понравились</p>
+                </div>
+                <div class="reviews__actions">
+                  <a href="">
+                    <img src="img/like-1.svg"/>
+                    <span>2</span>
+                  </a>
+
+                  <a href="">
+                    <img src="img/dislike.svg"/>
+                    <span>0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__info">              
+              <div class="rating">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="star-o"></span>                
+              </div>
+            </div>
           </div>
-          <div class="anchor__item" id="videos"></div>
-          <div class="anchor__item" id="reviews"></div>
 
         </div>
       </div>
